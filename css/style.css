@@ -161,3 +161,75 @@ input[type="radio"].visually-hidden {
 
     text-align: center;
 }
+
+.feature-1 {
+    display: flex;
+}
+
+.feature-info {
+    padding: 47px 45px 58px 45px;
+    width: 400px;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #81b3d2;
+}
+
+.feature-title {
+    margin: 0;
+    padding-bottom: 24px;
+
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: normal;
+}
+
+.feature-number {
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0;
+    padding-bottom: 22px;
+}
+
+.feature-number::before {
+    content: "";
+
+    position: absolute;
+
+    top: 10px;
+    left: -17px;
+
+    width: 14px;
+    height: 1px;
+    background-color: #fff;
+}
+
+.feature-number::after {
+    content: "";
+
+    position: absolute;
+
+    top: 10px;
+    left: 23px;
+
+    width: 14px;
+    height: 1px;
+    background-color: #fff;
+}
+
+.feature-description {
+    margin: 0;
+}
+
+.feature-logo {
+    width: 800px;
+    height: 256px;
+}
+
+.feature-logo img {
+    width: 800px;
+    height: 256px;
+}
