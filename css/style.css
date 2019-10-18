@@ -1,0 +1,163 @@
+body {
+    min-width: 1200px;
+
+    font-size: 14px;
+    line-height: 21px;
+    font-family: 'PT Sans', 'Arial', sans-serif;
+
+    text-transform: uppercase;
+
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+.container {
+    margin: 0 auto;
+
+    width: 1200px;
+
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.main-header {
+    position: relative;
+
+    min-height: 780px;
+
+    background-color: #fff;
+
+    background: url("../img/header_bg.jpg") 0 0 no-repeat;
+    z-index: -1;
+}
+
+.main-menu {
+    display: flex;
+
+    margin: 0;
+    padding: 0 72px;
+
+    list-style: none;
+
+    background-color: #fff;
+}
+
+.main-logo img {
+    position: absolute;
+
+    display: block;
+    top: 0;
+    left: 50%;
+
+    margin-left: -69px;
+
+    width: 138px;
+    height: 70px;
+}
+
+.menu-item {
+    padding: 16px 0;
+
+    width: 264px;
+
+    text-align: left;
+}
+
+.menu-item:nth-child(n + 3) {
+    text-align: right;
+}
+
+.menu-item a {
+
+    line-height: 26px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    color: #000;
+}
+
+.menu-item a:hover {
+    color: #81b3d2;
+}
+
+.menu-item a:active {
+    color: #000;
+    opacity: 0.3;
+}
+
+.menu-item.current-page a,
+.menu-item.current-page a:hover,
+.menu-item.current-page a:active {
+    color: #766357;
+    opacity: 1;
+}
+
+.header-greeting-title {
+    position: relative;
+
+    padding-top: 76px;
+    padding-bottom: 80px;
+}
+
+.header-greeting-title img {
+    display: block;
+
+    margin: 0 auto;
+}
+
+.header-greeting-title::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 1200px;
+    height: 57px;
+    background: url("../img/decorate_header_shape.png") 0 0 no-repeat;
+}
+
+.about-description {
+    padding: 60px 313px 53px 312px;
+    background-color: #fff;
+}
+
+.about-description b {
+    display: inline-block;
+
+    padding-bottom: 30px;
+
+    font-size: 21px;
+    line-height: 26px;
+
+    text-align: center;
+
+    color: #000;
+}
+
+.about-description p {
+    margin: 0;
+
+    line-height: 26px;
+
+    text-align: center;
+}
