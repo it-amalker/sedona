@@ -179,6 +179,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-3-5 .feature-info {
+    padding: 47px 60px 58px 60px;
     background-color: #eeeeee;
 }
 
@@ -333,4 +334,61 @@ input[type="radio"].visually-hidden {
 
 .service-description {
     margin: 0;
+}
+
+.reservation {
+    padding: 57px 316px 0 316px;
+    background-color: #fff;
+}
+
+
+.reservation b {
+    display: inline-block;
+
+    padding-bottom: 30px;
+
+    width: 568px;
+
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+
+    text-align: center;
+
+    color: #000;
+}
+
+.reservation p {
+    margin: 0;
+    padding-bottom: 47px;
+
+    text-align: center;
+}
+
+.reservation-button {
+    font: inherit;
+    color: inherit;
+
+    display: inline-block;
+
+    margin: 0 auto;
+    padding: 34px 140px;
+
+    font-size: 21px;
+    line-height: 26px;
+
+    width: 568px;
+
+    color: #fff;
+    background-color: #766357;
+    border: none;
+}
+
+.reservation-button:hover {
+    background-color: #604e43;
+}
+
+.reservation-button:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
 }
