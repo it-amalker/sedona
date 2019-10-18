@@ -182,7 +182,7 @@ input[type="radio"].visually-hidden {
 
     font-size: 21px;
     line-height: 21px;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .feature-number {
@@ -232,4 +232,79 @@ input[type="radio"].visually-hidden {
 .feature-logo img {
     width: 800px;
     height: 256px;
+}
+
+.services {
+    background-color: #fff;
+}
+
+.services-list {
+    display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.services-item {
+    position: relative;
+
+    padding: 162px 55px 84px 55px;
+    width: 400px;
+
+    text-align: center;
+}
+
+.services-item:after {
+    content: "";
+
+    position: absolute;
+
+    top: 60px;
+    left: 50%;
+}
+
+.services-item:first-child:after {
+    top: 60px;
+
+    width: 76px;
+    height: 72px;
+
+    margin-left: -38px;
+
+    background: url("../img/icon-1.svg") 0 0 no-repeat;
+}
+
+.services-item:nth-child(2):after {
+    top: 59px;
+
+    width: 74px;
+    height: 70px;
+
+    margin-left: -35px;
+    background: url("../img/icon-2.svg") 0 0 no-repeat;
+}
+
+.services-item:last-child:after {
+    top: 56px;
+
+    width: 64px;
+    height: 76px;
+
+    margin-left: -32px;
+    background: url("../img/icon-3.svg") 0 0 no-repeat;
+}
+
+.service-title {
+    margin: 0;
+    padding-bottom: 21px;
+
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.service-description {
+    margin: 0;
 }
