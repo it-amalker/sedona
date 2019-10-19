@@ -47,6 +47,10 @@ input[type="radio"].visually-hidden {
     background: url("../img/header_bg.jpg") 0 0 no-repeat;
 }
 
+.main-header.inner-page {
+    min-height: 58px;
+}
+
 .main-menu {
     display: flex;
 
@@ -415,6 +419,14 @@ input[type="radio"].visually-hidden {
     left: 0;
 
     background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-bottom.inner-page {
+    display: flex;
+
+    position: relative;
+
+    background-color: #fff;
 }
 
 .footer-bottom b {
@@ -800,4 +812,185 @@ input[type="radio"].visually-hidden {
 .modal-button:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3)
+}
+
+.filter {
+    padding: 28px 72px 31px 72px;
+    background-color: #000;
+    background: url("../img/filter_bg.jpg") center no-repeat;
+
+    color: #fff;
+}
+
+.filter-form {
+    display: flex;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+
+    border: none;
+}
+
+.filter-infrastructure,
+.filter-housing-type {
+    width: 255px;
+}
+
+.filter-price {
+    margin-left: auto;
+}
+
+.filter-title {
+    padding-bottom: 26px;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.filter-price .filter-title {
+    padding-bottom: 12px;
+}
+
+.filter-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.filter-infrastructure .filter-item,
+.filter-housing-type .filter-item {
+    position: relative;
+
+    padding-bottom: 23px;
+    padding-left: 40px;
+}
+
+.checkbox-filter+label::before {
+    content: "";
+
+    position: absolute;
+
+    box-sizing: border-box;
+
+    width: 23px;
+    height: 23px;
+
+    top: 0;
+    left: 2px;
+
+    border: 2px solid #fff;
+    border-radius: 3px;
+}
+
+.checkbox-filter:checked+label::before {
+    border: none;
+}
+
+.checkbox-filter:checked+label::after {
+    content: "";
+
+    position: absolute;
+
+    box-sizing: border-box;
+
+    width: 27px;
+    height: 23px;
+
+    top: 0;
+    left: 2px;
+
+    background: url("../img/checkbox-on.svg") center no-repeat;
+}
+
+.filter-price-wrapper {
+    display: flex;
+
+    width: 318px;
+}
+
+.filter-price-item-wrap {
+    width: 160px;
+}
+
+.filter-price-item label {
+    box-sizing: border-box;
+
+    display: inline-block;
+
+    margin-right: -4px;
+    padding: 7px 0;
+
+    text-align: right;
+
+    border: 2px solid #fff;
+    border-right: none;
+    border-radius: 2px 0 0 2px;
+}
+
+.item-left label {
+    width: 85px;
+}
+
+.item-right label {
+    position: relative;
+
+    width: 73px;
+
+    border-left: none;
+    border-radius: 0;
+}
+
+.item-right label::before {
+    content: "";
+
+    position: absolute;
+
+    width: 2px;
+    height: 22px;
+
+    top: 50%;
+    left: 0;
+
+    margin-top: -11px;
+
+    background-color: #fff;
+
+
+
+}
+
+
+.filter-price input {
+    font: inherit;
+    color: inherit;
+
+    display: inline-block;
+
+    box-sizing: border-box;
+
+    padding: 7px 4px;
+
+    text-align: left;
+    text-transform: uppercase;
+
+    background-color: transparent;
+
+    border: 2px solid #fff;
+    border-left: none;
+
+    outline: none;
+}
+
+.item-left input {
+    width: 74px;
+    border-right: none;
+    border-radius: 0;
+}
+
+.item-right input {
+    width: 86px;
+    border-radius: 0 2px 2px 0;
 }
