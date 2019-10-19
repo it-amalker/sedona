@@ -45,7 +45,6 @@ input[type="radio"].visually-hidden {
     background-color: #fff;
 
     background: url("../img/header_bg.jpg") 0 0 no-repeat;
-    z-index: -1;
 }
 
 .main-menu {
@@ -85,7 +84,6 @@ input[type="radio"].visually-hidden {
 }
 
 .menu-item a {
-
     line-height: 26px;
     font-weight: bold;
 
@@ -372,10 +370,12 @@ input[type="radio"].visually-hidden {
     display: inline-block;
 
     margin: 0 auto;
-    padding: 34px 140px;
+    padding: 34px 139px;
 
     font-size: 21px;
     line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
 
     width: 568px;
 
@@ -564,4 +564,147 @@ input[type="radio"].visually-hidden {
 
 .footer-developer-logo:active {
     background-image: url("../img/developer_logo_grey.svg");
+}
+
+.modal {
+    box-sizing: border-box;
+
+    padding: 55px;
+
+    width: 568px;
+    height: 395px;
+
+    background-color: #fff;
+}
+
+.form-group {
+    position: relative;
+
+    display: block;
+}
+
+.form-group label {
+    display: inline-block;
+
+    width: 93px;
+
+    padding-right: 15px;
+
+    line-height: 26px;
+
+    font-weight: bold;
+
+    color: #000;
+}
+
+.form-group input {
+    font: inherit;
+
+    box-sizing: border-box;
+
+    margin-bottom: 29px;
+    padding: 8px 13px;
+
+    width: 346px;
+
+    line-height: 26px;
+    font-weight: bold;
+
+    color: #000;
+    background-color: #f2f2f2;
+
+    text-transform: uppercase;
+
+    border: none;
+}
+
+.calendar-icon {
+    position: absolute;
+
+    display: block;
+
+    width: 21px;
+    height: 22px;
+
+    top: 8px;
+    right: 14px;
+
+    background: url("../img/calendar.svg") center no-repeat;
+}
+
+.form-group-age {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group-age-children label {
+    text-align: right;
+}
+
+.form-group-age input {
+    margin-bottom: 54px;
+    padding: 8px 38px;
+
+    width: 114px;
+
+    text-align: center;
+}
+
+.form-group-age-adults,
+.form-group-age-children {
+    position: relative;
+}
+
+
+.form-group-age-adults::before,
+.form-group-age-children::before {
+    content: "";
+
+    position: absolute;
+
+    width: 12px;
+    height: 3px;
+
+    top: 20px;
+    left: 125px;
+
+    background-color: #a9a9a9;
+}
+
+.form-group-age-adults::after,
+.form-group-age-children::after {
+    content: "";
+
+    position: absolute;
+
+    width: 11px;
+    height: 11px;
+
+    top: 16px;
+    left: 200px;
+
+    background: url("../img/form-plus.png") center no-repeat;
+}
+
+.modal-button {
+    font: inherit;
+
+    display: inline-block;
+
+    margin: 0 auto;
+    margin-bottom: 55px;
+    padding: 15px 196px 22px 196px;
+
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    width: 458px;
+
+    color: #fff;
+    background-color: #81b3d2;
+    border: none;
+
 }

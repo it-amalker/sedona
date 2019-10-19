@@ -123,16 +123,28 @@
     </footer>
     <section class="modal">
         <h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
-        <form action="" method="POST">
-            <label for="date-arrived"></label>
-            <input type="date" name="arrived-date" id="date-arrived">
-            <label for="date-leave"></label>
-            <input type="date" name="leave-date" id="date-leave">
-            <label for="children"></label>
-            <input type="text" name="children-number" id="children">
-            <label for="adults"></label>
-            <input type="text" name="adults-number" id="adults">
-            <button type="submit">Найти</button>
+        <form class="modal-form" action="" method="POST">
+            <div class="form-group">
+                <label for="date-arrived">Дата заезда:</label>
+                <input type="text" name="arrived-date" id="date-arrived" value="24 апреля 2017">
+                <span class="calendar-icon"></span>
+            </div>
+            <div class="form-group">
+                <label for="date-leave">Дата выезда:</label>
+                <input type="text" name="leave-date" id="date-leave" value="04 июля 2017">
+                <span class="calendar-icon"></span>
+            </div>
+            <div class="form-group form-group-age">
+                <div class="form-group-age-adults">
+                    <label for="adults">Взрослые:</label>
+                    <input type="text" name="adults-number" id="adults" value="2">
+                </div>
+                <div class="form-group-age-children">
+                    <label for="children">Дети:</label>
+                    <input type="text" name="children-number" id="children" value="0">
+                </div>
+            </div>
+            <button type="submit" class="modal-button">Найти</button>
         </form>
     </section>
 </body>
