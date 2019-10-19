@@ -298,7 +298,7 @@ input[type="radio"].visually-hidden {
 
     margin-left: -38px;
 
-    background: url("../img/icon-1.svg") 0 0 no-repeat;
+    background: url("../img/service_icon_1.svg") 0 0 no-repeat;
 }
 
 .services-item:nth-child(2):after {
@@ -308,7 +308,7 @@ input[type="radio"].visually-hidden {
     height: 70px;
 
     margin-left: -35px;
-    background: url("../img/icon-2.svg") 0 0 no-repeat;
+    background: url("../img/service_icon_2.svg") 0 0 no-repeat;
 }
 
 .services-item:last-child:after {
@@ -318,7 +318,7 @@ input[type="radio"].visually-hidden {
     height: 76px;
 
     margin-left: -32px;
-    background: url("../img/icon-3.svg") 0 0 no-repeat;
+    background: url("../img/service_icon_3.svg") 0 0 no-repeat;
 }
 
 .service-title {
@@ -499,7 +499,7 @@ input[type="radio"].visually-hidden {
     width: 18px;
     height: 16px;
 
-    background: url("../img/twitter.svg") center no-repeat;
+    background: url("../img/social_twitter.svg") center no-repeat;
 }
 
 .social-fb::before {
@@ -512,7 +512,7 @@ input[type="radio"].visually-hidden {
     width: 12px;
     height: 22px;
 
-    background: url("../img/facebook.svg") center no-repeat;
+    background: url("../img/social_facebook.svg") center no-repeat;
 }
 
 .social-youtube::before {
@@ -525,7 +525,7 @@ input[type="radio"].visually-hidden {
     width: 20px;
     height: 16px;
 
-    background: url("../img/youtube.svg") center no-repeat;
+    background: url("../img/social_youtube.svg") center no-repeat;
 }
 
 .footer-developer {
@@ -554,16 +554,14 @@ input[type="radio"].visually-hidden {
 
     width: 115px;
     height: 42px;
-
-    background: url("../img/developer_logo_black.svg") center no-repeat;
 }
 
-.footer-developer-logo:hover {
-    background-image: url("../img/developer_logo_blue.svg");
+.footer-developer-logo:hover svg {
+    fill: #81b3d2;
 }
 
-.footer-developer-logo:active {
-    background-image: url("../img/developer_logo_grey.svg");
+.footer-developer-logo:active svg {
+    fill: #bdbbbc;
 }
 
 .modal {
@@ -580,16 +578,19 @@ input[type="radio"].visually-hidden {
 .form-group {
     position: relative;
 
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 29px;
+}
+
+.form-date-wrapper {
+    position: relative;
+
 }
 
 .form-group label {
-    display: inline-block;
-
-    width: 93px;
-
-    padding-right: 15px;
-
     line-height: 26px;
 
     font-weight: bold;
@@ -602,8 +603,7 @@ input[type="radio"].visually-hidden {
 
     box-sizing: border-box;
 
-    margin-bottom: 29px;
-    padding: 8px 13px;
+    padding: 6px 13px;
 
     width: 346px;
 
@@ -618,46 +618,114 @@ input[type="radio"].visually-hidden {
     border: none;
 }
 
-.calendar-icon {
+.form-group input::placeholder {
+    font: inherit;
+
+    line-height: 26px;
+
+    color: #000;
+
+    text-transform: uppercase;
+}
+
+.form-group input:hover {
+    background-color: #ebebeb;
+}
+
+.form-group input:focus {
+    padding: 4px 11px;
+    padding-right: 34px;
+
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+
+    outline: none;
+}
+
+.calendar-button {
     position: absolute;
 
+    padding: 0;
+
+    top: 0;
+    right: 0;
+
+    width: 37px;
+    height: 38px;
+
+    background-color: transparent;
+    border: none;
+}
+
+.calendar-icon {
     display: block;
+    margin: auto;
 
     width: 21px;
     height: 22px;
+}
 
-    top: 8px;
-    right: 14px;
+.calendar-icon:hover {
+    fill: #000;
+    cursor: pointer;
+}
 
-    background: url("../img/calendar.svg") center no-repeat;
+.calendar-icon:active {
+    fill: #81b3d2;
 }
 
 .form-group-age {
+    margin-bottom: 54px;
+}
+
+.form-group-age-wrap {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    width: 229px;
 }
 
-.form-group-age-children label {
-    text-align: right;
+.form-group-age-wrap:last-of-type label {
+    margin-left: 50px;
 }
 
-.form-group-age input {
-    margin-bottom: 54px;
-    padding: 8px 38px;
+.form-group-age-wrap input {
+    padding: 6px 10px;
 
-    width: 114px;
+    width: 38px;
 
     text-align: center;
 }
 
-.form-group-age-adults,
-.form-group-age-children {
-    position: relative;
+.count-buttons-wrap:first-of-type {
+    margin-right: 3px;
 }
 
+.form-group-age-wrap input:focus {
+    padding: 4px 8px;
+}
 
-.form-group-age-adults::before,
-.form-group-age-children::before {
+.count-buttons-wrap {
+    display: flex;
+}
+
+.button-count-minus,
+.button-count-plus {
+    position: relative;
+
+    display: block;
+
+    width: 38px;
+    height: 38px;
+
+    background-color: #f2f2f2;
+
+    border: none;
+}
+
+.button-count-minus::before,
+.button-count-plus::before {
     content: "";
 
     position: absolute;
@@ -665,25 +733,42 @@ input[type="radio"].visually-hidden {
     width: 12px;
     height: 3px;
 
-    top: 20px;
-    left: 125px;
+    top: 50%;
+    left: 50%;
+
+    margin-top: -1.5px;
+    margin-left: -6px;
 
     background-color: #a9a9a9;
 }
 
-.form-group-age-adults::after,
-.form-group-age-children::after {
+.button-count-plus::after {
     content: "";
 
     position: absolute;
 
-    width: 11px;
-    height: 11px;
+    width: 3px;
+    height: 12px;
 
-    top: 16px;
-    left: 200px;
+    top: 50%;
+    left: 50%;
 
-    background: url("../img/form-plus.png") center no-repeat;
+    margin-top: -6px;
+    margin-left: -1.5px;
+
+    background-color: #a9a9a9;
+}
+
+.button-count-minus:hover::before,
+.button-count-plus:hover::before,
+.button-count-plus:hover::after {
+    background-color: #000;
+}
+
+.button-count-minus:active::before,
+.button-count-plus:active::before,
+.button-count-plus:active::after {
+    background-color: #81b3d2;
 }
 
 .modal-button {
@@ -706,5 +791,13 @@ input[type="radio"].visually-hidden {
     color: #fff;
     background-color: #81b3d2;
     border: none;
+}
 
+.modal-button:hover {
+    background-color: #669ec0;
+}
+
+.modal-button:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3)
 }
