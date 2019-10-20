@@ -868,6 +868,11 @@ fieldset {
     padding-left: 40px;
 }
 
+.filter-infrastructure .filter-item:last-of-type,
+.filter-housing-type .filter-item:last-of-type {
+    padding-bottom: 0;
+}
+
 .checkbox-filter+label::before {
     content: "";
 
@@ -903,6 +908,11 @@ fieldset {
     left: 2px;
 
     background: url("../img/checkbox-on.svg") center no-repeat;
+}
+
+.checkbox-filter:disabled+label::before,
+.checkbox-filter:checked:disabled+label::after {
+    opacity: 0.4;
 }
 
 .filter-price-wrapper {
@@ -957,11 +967,7 @@ fieldset {
     margin-top: -11px;
 
     background-color: #fff;
-
-
-
 }
-
 
 .filter-price input {
     font: inherit;
@@ -993,4 +999,122 @@ fieldset {
 .item-right input {
     width: 86px;
     border-radius: 0 2px 2px 0;
+}
+
+.range-filter {
+    width: 317px;
+    height: 20px;
+
+    margin-left: 1px;
+    padding-top: 11px;
+    padding-bottom: 23px;
+
+}
+
+.progress-line {
+    position: relative;
+
+    display: block;
+
+    margin: 10px 0;
+
+    width: 317px;
+    height: 2px;
+
+
+    background-color: #7f8284;
+}
+
+.progress-line::after {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 14px;
+
+    margin-top: -1px;
+
+    width: 246px;
+    height: 2px;
+
+    background-color: #fff;
+}
+
+.control-trigger-min,
+.control-trigger-max {
+    width: 4px;
+    height: 4px;
+
+    background-color: #ababab;
+
+    border: 8px solid #fff;
+    border-radius: 50%;
+
+    box-shadow: 0 2px 1px #79706f;
+
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+
+.control-trigger-min {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 0px;
+
+    margin-top: -10px;
+    z-index: 1;
+}
+
+.control-trigger-max {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 252px;
+
+    margin-top: -10px;
+    z-index: 1;
+}
+
+.control-trigger-min:hover,
+.control-trigger-max:hover {
+    margin-top: -11px;
+
+    width: 6px;
+    height: 6px;    
+}
+
+.form-button {
+    font: inherit;
+
+    display: block;
+
+    box-sizing: border-box;
+
+    margin: 0 auto;
+    padding: 6px 34px;
+
+    width: 137px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+
+.form-button:hover {
+    padding: 8px 36px;
+
+    color: #000;
+    background-color: #fff;
+    border: none;
 }
