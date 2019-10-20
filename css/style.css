@@ -743,12 +743,12 @@ input[type="radio"].visually-hidden {
     position: absolute;
 
     width: 12px;
-    height: 3px;
+    height: 4px;
 
     top: 50%;
     left: 50%;
 
-    margin-top: -1.5px;
+    margin-top: -2px;
     margin-left: -6px;
 
     background-color: #a9a9a9;
@@ -759,14 +759,14 @@ input[type="radio"].visually-hidden {
 
     position: absolute;
 
-    width: 3px;
+    width: 4px;
     height: 12px;
 
     top: 50%;
     left: 50%;
 
     margin-top: -6px;
-    margin-left: -1.5px;
+    margin-left: -2px;
 
     background-color: #a9a9a9;
 }
@@ -1259,4 +1259,178 @@ fieldset {
     border-color: #81b3d2;
     border-left-color: transparent;
     border-right-color: transparent;
+}
+
+.booking-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    background-color: #fff;
+}
+
+.booking-item {
+    display: flex;
+
+    padding: 28px 72px 30px 72px;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.booking-logo {
+    padding-right: 30px;
+
+    width: 135px;
+    height: 90px;
+}
+
+.booking-logo img {
+    width: 135px;
+    height: 90px;
+}
+
+.booking-info {
+    padding-right: 522px;
+
+    width: 258px;
+}
+
+.booking-title {
+    margin: 0;
+    margin-top: -6px;
+    padding-bottom: 10px;
+
+    font-size: 21px;
+    line-height: 26px;
+
+    color: #000;
+}
+
+.booking-title:hover {
+    color: #81b3d2;
+}
+
+.booking-title:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.booking-type {
+    display: inline-block;
+
+    margin: 0;
+    padding-right: 2px;
+
+    width: 110px;
+}
+
+.booking-price {
+    display: inline-block;
+
+    margin: 0;
+    padding-bottom: 13px; 
+
+    width: 142px;
+}
+
+.booking-more-info-button {
+    font: inherit;
+    color: inherit;
+
+    box-sizing: border-box;
+
+    display: inline-block;
+
+    margin-right: 2px; 
+    padding: 3px 17px;
+
+    width: 110px;
+
+    font-weight: bold;
+    
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #fff;
+    background-color: #81b3d2; 
+}
+
+.booking-button {
+    font: inherit;
+    color: inherit;
+
+    box-sizing: border-box;
+
+    display: inline-block;
+
+    padding: 3px 17px;
+
+    width: 142px;
+
+    font-weight: bold;
+    
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #fff;
+    background-color: #766357;  
+    
+    border: none;
+}
+
+.booking-more-info-button:hover {
+    background-color: #669ec0;      
+}
+
+.booking-more-info-button:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);      
+}
+
+.booking-button:hover {
+    background-color: #604e43;     
+}
+
+.booking-button:active {
+    background-color: #503e33; 
+    color: rgba(255, 255, 255, 0.3);      
+}
+
+.rating-stars {
+    width: 110px;
+}
+
+.stars-list {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 41px;
+
+    text-align: right;
+
+    list-style: none;
+}
+
+.star-item {
+    display: inline-block;
+
+    padding-right: 3px;
+    
+    width: 18px;
+    height: 17px;
+
+    background: url("/img/rating-star.svg") center no-repeat;
+}
+
+.star-item:last-child {
+    padding-right: 0;
+}
+
+.rating-number {
+    margin: 0;
+    padding: 3px 13px 3px 15px;
+
+    color: #666666;
+    background-color: #f2f2f2;
 }
