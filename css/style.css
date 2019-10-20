@@ -1088,7 +1088,7 @@ fieldset {
     margin-top: -11px;
 
     width: 6px;
-    height: 6px;    
+    height: 6px;
 }
 
 .form-button {
@@ -1117,4 +1117,146 @@ fieldset {
     color: #000;
     background-color: #fff;
     border: none;
+}
+
+.content-sort {
+    display: flex;
+    align-items: center;
+
+    padding: 31px 72px;
+
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.search-result {
+    width: 135px;
+
+    font-size: 21px;
+    line-height: 26px;
+
+    color: #000;
+}
+
+.sort-title {
+    margin: 0;
+    padding: 0;
+    padding-top: 7px;
+
+    width: 105px;
+
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+
+    color: #000;
+}
+
+.sort-list {
+    margin: 0;
+    padding: 0;
+
+    width: 288px;
+
+    list-style: none;
+}
+
+.sort-list li {
+    display: inline-block;
+
+    margin-left: 32px;
+    padding-top: 7px;
+
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-list li:first-child {
+    margin-left: 39px;
+}
+
+.list-item {
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.list-item:hover {
+    color: #81b3d2;
+}
+
+.list-item:active {
+    color: #000;
+}
+
+.sort-list li:active {
+    border-bottom: none;
+}
+
+.list-item.active {
+    color: rgba(129, 179, 210, 1);
+
+    cursor: auto;
+}
+
+.top-down-sort {
+    margin-left: auto;
+    padding: 0 1px;
+
+    width: 36px;
+}
+
+.top-down-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.sort-arrow {
+    display: inline-block;
+
+    vertical-align: bottom;
+    width: 11px;
+    height: 10px;
+}
+
+.sort-arrow-up {
+    margin-right: 10px;
+}
+
+.top-sort-arrow,
+.down-sort-arrow {
+    display: block;
+
+    border-width: 10px 5.5px;
+    border-style: solid;
+    border-color: #cbcbcb;
+
+    border-top: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.down-sort-arrow {
+    transform: rotate(180deg);
+}
+
+.sort-arrow a:hover {
+    border-color: #000;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.sort-arrow a:active {
+    border-color: #81b3d2;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.sort-arrow.active a {
+    border-color: #81b3d2;
+    border-left-color: transparent;
+    border-right-color: transparent;
 }
