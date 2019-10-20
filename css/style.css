@@ -343,7 +343,6 @@ input[type="radio"].visually-hidden {
     background-color: #fff;
 }
 
-
 .reservation b {
     display: inline-block;
 
@@ -367,9 +366,15 @@ input[type="radio"].visually-hidden {
     text-align: center;
 }
 
+.reservation-search-wrap {
+    position: relative;
+}
+
 .reservation-button {
     font: inherit;
     color: inherit;
+
+    position: relative;
 
     display: inline-block;
 
@@ -386,6 +391,8 @@ input[type="radio"].visually-hidden {
     color: #fff;
     background-color: #766357;
     border: none;
+
+    z-index: 2;
 }
 
 .reservation-button:hover {
@@ -576,7 +583,38 @@ input[type="radio"].visually-hidden {
     fill: #bdbbbc;
 }
 
+@keyframes modal-show {
+    0% {
+        transform: translateY(-35%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes modal-close {
+    0% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-35%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-1000%);
+        opacity: 0;
+    }
+}
+
 .modal {
+    display: none;
+
     box-sizing: border-box;
 
     padding: 55px;
@@ -585,6 +623,32 @@ input[type="radio"].visually-hidden {
     height: 395px;
 
     background-color: #fff;
+}
+
+.modal--show {
+    display: block;
+
+    position: absolute;
+
+    z-index: 1;
+
+    animation-name: modal-show;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.modal--close {
+    display: block;
+
+    position: absolute;
+
+    z-index: 1;
+
+    animation-name: modal-close;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
 }
 
 .form-group {
@@ -1328,7 +1392,7 @@ fieldset {
     display: inline-block;
 
     margin: 0;
-    padding-bottom: 13px; 
+    padding-bottom: 13px;
 
     width: 142px;
 }
@@ -1341,19 +1405,19 @@ fieldset {
 
     display: inline-block;
 
-    margin-right: 2px; 
+    margin-right: 2px;
     padding: 3px 17px;
 
     width: 110px;
 
     font-weight: bold;
-    
+
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
 
     color: #fff;
-    background-color: #81b3d2; 
+    background-color: #81b3d2;
 }
 
 .booking-button {
@@ -1369,33 +1433,33 @@ fieldset {
     width: 142px;
 
     font-weight: bold;
-    
+
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
 
     color: #fff;
-    background-color: #766357;  
-    
+    background-color: #766357;
+
     border: none;
 }
 
 .booking-more-info-button:hover {
-    background-color: #669ec0;      
+    background-color: #669ec0;
 }
 
 .booking-more-info-button:active {
     background-color: #5496bd;
-    color: rgba(255, 255, 255, 0.3);      
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .booking-button:hover {
-    background-color: #604e43;     
+    background-color: #604e43;
 }
 
 .booking-button:active {
-    background-color: #503e33; 
-    color: rgba(255, 255, 255, 0.3);      
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .rating-stars {
@@ -1416,7 +1480,7 @@ fieldset {
     display: inline-block;
 
     padding-right: 3px;
-    
+
     width: 18px;
     height: 17px;
 
