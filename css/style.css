@@ -76,11 +76,15 @@ input[type="radio"].visually-hidden {
 }
 
 .menu-item {
-    padding: 16px 0;
+    padding: 15px 0;
 
-    width: 264px;
+    width: 240px;
 
     text-align: left;
+}
+
+.menu-item:nth-child(3) {
+    margin-left: auto;
 }
 
 .menu-item:nth-child(n + 3) {
@@ -139,14 +143,14 @@ input[type="radio"].visually-hidden {
 }
 
 .about-description {
-    padding: 60px 313px 53px 312px;
+    padding: 60px 313px 50px 313px;
     background-color: #fff;
 }
 
 .about-description b {
     display: inline-block;
 
-    padding-bottom: 30px;
+    padding-bottom: 28px;
 
     font-size: 21px;
     line-height: 26px;
@@ -311,7 +315,9 @@ input[type="radio"].visually-hidden {
     width: 74px;
     height: 70px;
 
-    margin-left: -35px;
+    top: 61px;
+    margin-left: -40px;
+
     background: url("../img/service_icon_2.svg") 0 0 no-repeat;
 }
 
@@ -322,6 +328,7 @@ input[type="radio"].visually-hidden {
     height: 76px;
 
     margin-left: -32px;
+
     background: url("../img/service_icon_3.svg") 0 0 no-repeat;
 }
 
@@ -339,7 +346,7 @@ input[type="radio"].visually-hidden {
 }
 
 .reservation {
-    padding: 57px 316px 0 316px;
+    padding: 50px 316px 0 316px;
     background-color: #fff;
 }
 
@@ -361,7 +368,7 @@ input[type="radio"].visually-hidden {
 
 .reservation p {
     margin: 0;
-    padding-bottom: 47px;
+    padding-bottom: 46px;
 
     text-align: center;
 }
@@ -379,7 +386,7 @@ input[type="radio"].visually-hidden {
     display: inline-block;
 
     margin: 0 auto;
-    padding: 34px 139px;
+    padding: 30px 139px;
 
     font-size: 21px;
     line-height: 26px;
@@ -470,15 +477,19 @@ input[type="radio"].visually-hidden {
 .social-list li {
     display: inline-block;
 
+    padding-right: 3px;
+
     vertical-align: middle;
+}
+
+.social-list li:last-child {
+    padding-right: 0;
 }
 
 .social-item {
     position: relative;
 
     display: block;
-
-    padding-right: 4px;
 
     width: 46px;
     height: 48px;
@@ -496,10 +507,6 @@ input[type="radio"].visually-hidden {
 
 .social-item:active::before {
     opacity: 0.3;
-}
-
-.social-item:last-child {
-    padding-right: 0px;
 }
 
 .social-item::before {
@@ -661,6 +668,10 @@ input[type="radio"].visually-hidden {
     margin-bottom: 29px;
 }
 
+.form-group:nth-of-type(2) {
+    margin-bottom: 31px;
+}
+
 .form-date-wrapper {
     position: relative;
 
@@ -751,7 +762,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-group-age {
-    margin-bottom: 54px;
+    margin-bottom: 53px;
 }
 
 .form-group-age-wrap {
@@ -774,7 +785,7 @@ input[type="radio"].visually-hidden {
     text-align: center;
 }
 
-.count-buttons-wrap:first-of-type {
+.form-group-age-wrap:first-of-type .count-buttons-wrap {
     margin-right: 3px;
 }
 
@@ -854,7 +865,7 @@ input[type="radio"].visually-hidden {
 
     margin: 0 auto;
     margin-bottom: 55px;
-    padding: 15px 196px 22px 196px;
+    padding: 16px 196px 18px 196px;
 
     font-size: 21px;
     line-height: 26px;
