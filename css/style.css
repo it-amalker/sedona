@@ -48,7 +48,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header.inner-page {
-    min-height: 58px;
+    min-height: 56px;
 }
 
 .main-menu {
@@ -892,7 +892,7 @@ input[type="radio"].visually-hidden {
 .filter {
     padding: 28px 72px 31px 72px;
     background-color: #000;
-    background: url("../img/filter_bg.jpg") center no-repeat;
+    background: url("../img/filter_bg.jpg") 0 16% no-repeat;
 
     color: #fff;
 }
@@ -918,14 +918,15 @@ fieldset {
 }
 
 .filter-title {
-    padding-bottom: 26px;
+    padding-bottom: 25px;
 
     font-size: 16px;
     font-weight: bold;
 }
 
 .filter-price .filter-title {
-    padding-bottom: 12px;
+    padding-left: 2px;
+    padding-bottom: 10px;
 }
 
 .filter-list {
@@ -939,7 +940,7 @@ fieldset {
 .filter-housing-type .filter-item {
     position: relative;
 
-    padding-bottom: 23px;
+    padding-bottom: 25px;
     padding-left: 40px;
 }
 
@@ -958,8 +959,8 @@ fieldset {
     width: 23px;
     height: 23px;
 
-    top: 0;
-    left: 2px;
+    top: -2px;
+    left: 1px;
 
     border: 2px solid #fff;
     border-radius: 3px;
@@ -979,8 +980,8 @@ fieldset {
     width: 27px;
     height: 23px;
 
-    top: 0;
-    left: 2px;
+    top: -2px;
+    left: 1px;
 
     background: url("../img/checkbox-on.svg") center no-repeat;
 }
@@ -1006,7 +1007,7 @@ fieldset {
     display: inline-block;
 
     margin-right: -4px;
-    padding: 7px 0;
+    padding: 6px 0 5px 0;
 
     text-align: right;
 
@@ -1052,7 +1053,7 @@ fieldset {
 
     box-sizing: border-box;
 
-    padding: 7px 4px;
+    padding: 6px 4px 5px 4px;
 
     text-align: left;
     text-transform: uppercase;
@@ -1081,7 +1082,7 @@ fieldset {
     height: 20px;
 
     margin-left: 1px;
-    padding-top: 11px;
+    padding-top: 10px;
     padding-bottom: 23px;
 
 }
@@ -1173,7 +1174,7 @@ fieldset {
 
     box-sizing: border-box;
 
-    margin: 0 auto;
+    margin-left: 85px;
     padding: 6px 34px;
 
     width: 137px;
@@ -1198,7 +1199,7 @@ fieldset {
     display: flex;
     align-items: center;
 
-    padding: 31px 72px;
+    padding: 28px 72px 30px 72px;
 
     background-color: #fff;
     border-bottom: 1px solid #e5e5e5;
@@ -1216,13 +1217,15 @@ fieldset {
 .sort-title {
     margin: 0;
     padding: 0;
-    padding-top: 7px;
+    padding-top: 6px;
 
     width: 105px;
 
     font-size: 12px;
     line-height: 18px;
     font-weight: normal;
+
+    text-align: right;
 
     color: #000;
 }
@@ -1239,10 +1242,8 @@ fieldset {
 .sort-list li {
     display: inline-block;
 
-    margin-left: 32px;
-    padding-top: 7px;
-
-    border-bottom: 1px dotted #81b3d2;
+    margin-left: 29px;
+    padding-top: 6px;
 }
 
 .sort-list li:first-child {
@@ -1255,6 +1256,8 @@ fieldset {
     text-decoration: none;
 
     color: rgba(0, 0, 0, 0.3);
+
+    border-bottom: 1px dotted #81b3d2;
 }
 
 .list-item:hover {
@@ -1263,14 +1266,14 @@ fieldset {
 
 .list-item:active {
     color: #000;
-}
 
-.sort-list li:active {
     border-bottom: none;
 }
 
 .list-item.active {
-    color: rgba(129, 179, 210, 1);
+    color: #81b3d2;
+
+    border-bottom: none;
 
     cursor: auto;
 }
@@ -1292,7 +1295,7 @@ fieldset {
 .sort-arrow {
     display: inline-block;
 
-    vertical-align: bottom;
+    vertical-align: center;
     width: 11px;
     height: 10px;
 }
@@ -1314,8 +1317,13 @@ fieldset {
     border-right-color: transparent;
 }
 
+.top-sort-arrow {
+    padding-top: 3px;
+}
+
 .down-sort-arrow {
-    transform: rotate(180deg);
+    transform: rotate(180deg) translateY(-3px);
+
 }
 
 .sort-arrow a:hover {
@@ -1334,6 +1342,8 @@ fieldset {
     border-color: #81b3d2;
     border-left-color: transparent;
     border-right-color: transparent;
+
+    cursor: auto;
 }
 
 .booking-list {
@@ -1348,7 +1358,7 @@ fieldset {
 .booking-item {
     display: flex;
 
-    padding: 28px 72px 30px 72px;
+    padding: 30px 72px 29px 72px;
 
     border-bottom: 1px solid #e5e5e5;
 }
@@ -1374,7 +1384,7 @@ fieldset {
 .booking-title {
     margin: 0;
     margin-top: -6px;
-    padding-bottom: 10px;
+    padding-bottom: 9px;
 
     font-size: 21px;
     line-height: 26px;
